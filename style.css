@@ -1,5 +1,6 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: lightblue;
 }
 
 /* Navigation Bar */
@@ -130,6 +131,7 @@ h2 {
   width: 2in;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
+  background-color: white;
 }
 
 .skill img {
