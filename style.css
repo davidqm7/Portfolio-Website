@@ -106,11 +106,13 @@ h2 {
   margin-top: -1cm;
 }
 
+
 .profile_image {
-  width: 550px;
+  width: 530px;
   height: fit-content;
   vertical-align: middle;
   margin: 5px;
+  margin-right: 20px;
 }
 
 /* Skills */
@@ -141,7 +143,7 @@ h2 {
 
 .skills h6 {
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
@@ -177,6 +179,9 @@ h2 {
 .project-card {
   margin: 0 15px 15px 30px;
   padding-bottom: 5px;
+  border: 1px solid gray;
+  background-color: white;
+  
 }
 
 .project-card h3 {
