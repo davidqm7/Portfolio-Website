@@ -1,27 +1,30 @@
+/* style.css */
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color:lightblue;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation Bar */
-
 #home {
-  background-color:  #7600bc;
+  background-color: #7600bc;
   padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
   padding-top: 2cm;
   padding-bottom: 2cm;
   height: 5mm;
- }
+}
 
 .topmenu {
   color: lightgray;
   margin: 10px;
   padding: 20px;
   font-size: 20px;
-  text-decoration:none;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .topmenu:hover {
@@ -30,12 +33,51 @@ body {
   text-decoration: underline;
 }
 
-.socials{
+.socials {
   display: flex;
   align-items: center;
-  gap: 20px; 
+  gap: 20px;
   padding-left: 10cm;
+}
 
+.social-link i {
+  font-size: 24px;
+}
+
+.social-link span {
+  font-size: 16px;
+}
+
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.socials a {
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.1);
+}
+
+
+/* Specific colors for each platform */
+.social-link:has(.fa-linkedin) {
+  background-color: #b3bdc2;
+}
+
+.social-link:has(.fa-github) {
+  background-color: #b3bdc2;
+}
+
+.social-link:has(.fa-linkedin):hover {
+  background-color: rgba(0, 0, 153, 0);
+}
+
+.social-link:has(.fa-github):hover {
+  background-color: rgba(0, 0, 153, 0);
 }
 
 .topdiv {
@@ -59,13 +101,12 @@ body {
 }
 
 .contact_info img {
-  width:25px;
+  width: 25px;
   margin-right: 10px;
-  float:left;
+  float: left;
 }
 
 /* Titles */
-
 h2 {
   text-align: justify;
   font-size: 50px;
@@ -89,46 +130,101 @@ h2 {
   position: relative;
 }
 
-/* Used in the About Me sections */
-
+/* About Me Section */
 .container {
   display: flex;
-}
-
-/* About Me */
-
-.about-me {
-  display: flex;
   align-items: center;
+  padding: 20px 50px;
+  margin-top: 20px; /* Reduced top margin */
+  gap: 30px;
 }
 
-#about-me h1 {
-  font-size: 65px;
-  margin-top: 90px;
-  color: #7600bc;
+.profile-img-container {
+  flex: 0 0 auto;
 }
-
-#about-me p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
-  margin-top: -1cm;
-}
-
 
 .profile_image {
   width: 530px;
-  height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
-  margin-right: 20px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #7600bc;
+  margin-bottom: 20px;
+}
+
+.wave {
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.main-description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #7600bc; /* Made consistent with theme */
+  margin-bottom: 25px;
+}
+
+.key-attributes {
+  margin-top: 20px;
+}
+
+.key-attributes h3 {
+  color: #7600bc;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.key-attributes ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.key-attributes li {
+  color: #7600bc; /* Made consistent with theme */
+  padding: 8px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.key-attributes li:before {
+  content: "•";
+  color: #7600bc;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .profile_image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about-content {
+    padding: 0;
+  }
 }
 
 /* Skills */
-
 .all_skills {
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .skill {
@@ -142,6 +238,11 @@ h2 {
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
   background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
 }
 
 .skill img {
@@ -149,21 +250,21 @@ h2 {
   align-items: center;
 }
 
-.skills h6 {
+.skill h6 {
   align-items: center;
   font-size: 25px;
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
-} 
+}
 
-.skills p {
+.skill p {
   align-items: center;
   font-size: 15px;
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
-} 
+}
 
 .flex_center {
   display: flex;
@@ -172,7 +273,6 @@ h2 {
 }
 
 /* Projects */
-
 .projects-container {
   margin-top: 30px;
   margin-left: 60px;
@@ -186,15 +286,22 @@ h2 {
 
 .project-card {
   margin: 0 15px 15px 30px;
-  padding-bottom: 5px;
+  padding: 20px;
   border: 1px solid gray;
   background-color: white;
-  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-card h3 {
   font-size: 25px;
   margin-left: 30px;
+  color: #7600bc;
 }
 
 .project-card li {
@@ -202,14 +309,23 @@ h2 {
   margin-left: 30px;
 }
 
-/* Recommendations */
+.project-card a {
+  color: #7600bc;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Recommendations */
 .all_recommendations {
   display: flex;
   align-items: center;
   margin-left: 1in;
   flex-direction: row;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   padding: 20px;
 }
 
@@ -223,9 +339,14 @@ h2 {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
-  border:1px solid gray;
+  border: 1px solid gray;
   font-size: 18px;
-  height:150px
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.recommendation:hover {
+  transform: translateY(-5px);
 }
 
 .recommendation span {
@@ -235,8 +356,7 @@ h2 {
 }
 
 /* Scroll to Top Button */
-
-.iconbutton{
+.iconbutton {
   width: 48px;
   height: 48px;
   border-radius: 100%;
@@ -248,21 +368,26 @@ h2 {
   right: 3%;
   bottom: 3%;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.iconbutton:hover {
+  background-color: #5a0090;
 }
 
 /* Form Pop-up */
-
 .popup {
-  width:400px;
+  width: 400px;
   background-color: #e8bcf0;
   border-radius: 3mm;
   top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   position: fixed;
-  /* padding: 30px; */
+  padding: 30px;
   visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .popup img {
@@ -281,40 +406,42 @@ h2 {
   width: 2in;
   font-size: 20px;
   margin-left: 25%;
+  transition: all 0.3s ease;
 }
 
 .popup button:hover {
-  background-color: #fff;
+  background-color: #7600bc;
+  color: white;
   border: 2px solid #7600bc;
-  color: #7600bc;
-  display: block;
   font-weight: bolder;
-  text-align: center;
   cursor: pointer;
-  margin-left: 25%;
 }
 
 /* Recommendation Form */
-
 input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  margin: 10px;  
-  width:100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
 }
 
 fieldset {
   display: flexbox;
   align-content: center;
-  justify-content: center;  
-  padding: 25px; 
-  margin-left: 50px; 
-  margin-right: 50px;   
+  justify-content: center;
+  padding: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
   border: thin solid white;
   width: 50%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Buttons */
-
 button {
   background-color: #fff;
   border: 1px solid #7600bc;
@@ -326,14 +453,51 @@ button {
   padding: 10px;
   width: 2in;
   font-size: 20px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background-color: #7600bc;
-  border: 1px solid #7600bc;
   color: #fff;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #7600bc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .profile_image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .all_skills {
+    padding: 10px;
+  }
+
+  .skill {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .projects-container {
+    margin-left: 20px;
+  }
+
+  fieldset {
+    width: 90%;
+    margin: 10px;
+  }
 }

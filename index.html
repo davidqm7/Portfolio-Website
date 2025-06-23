@@ -1,220 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>David Quintanilla - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Quintanilla - Software Engineer</title>
     <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          David Quintanilla
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          davidqm7@outlook.com
+   <nav>
+    <div id="home">
+      <div class="profile_name">
+        David Quintanilla
+        <div class="contact_info">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:davidqm7@outlook.com">davidqm7@outlook.com</a>
         </div>
-        <div class="contact_info"></div>
-         
-        </div>
-        <div class ="socials">
-          <a href="https://www.linkedin.com/in/david-quintanilla-386621272/" target="_blank">
-            <img src="Images/linkedIn.jpg" height="45px" width="45px" alt="LinkedIn" class="nav-icon">
-          </a>
-          <a href="https://github.com/davidqm7" target="_blank">
-            <img src="Images/github.png" height="45px" width="45px" alt="GitHub" class="nav-icon">
-          </a>
-        </div>
-
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Recommendations</a>
-
-        </div>
-      </div>    
-    </nav>
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="Images/avatar.jpg" class="profile_image"/>
+      </div>
+      
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/david-quintanilla-386621272/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/davidqm7" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
       </div>
 
-      <div>
-          <h1>
-            Hi, I'm David Quintanilla! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
-          </h1>
-          <p>
-            I hold a Bachelor's degree in Software Engineering from Kennesaw State University and was raised in Henry County, Georgia. 
-            I’m passionate about building innovative software solutions and thrive in collaborative environments. 
-            Known for being a dedicated and dependable worker, I’m eager to contribute my skills to exciting new opportunities. 
-          </p>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
       </div>
-    </section>
+    </div>    
+  </nav>
+
+  <!-- About Me -->
+<section id="about-me" class="container">
+  <div class="profile-img-container">
+    <img src="Images/avatar.jpg" class="profile_image" alt="David working at computer"/>
+  </div>
+
+  <div class="about-content">
+    <h1 class="title">
+      Hi, I'm David Quintanilla! <span class="wave">👋</span>
+    </h1>
+    <p class="main-description">
+      I am a Software Engineer with a Bachelor's degree from Kennesaw State University, bringing fresh perspectives and modern technical expertise to software development. My passion lies in creating innovative solutions that solve real-world problems, with particular interest in full-stack development and emerging technologies. Through my academic projects and personal endeavors, I've developed strong collaborative skills and a track record of delivering high-quality results. I combine technical proficiency with strong problem-solving abilities, always eager to learn new technologies and contribute to meaningful projects.
+    </p>
+    <div class="key-attributes">
+      <h3>Key attributes:</h3>
+      <ul>
+        <li>Strong foundation in both front-end and back-end development</li>
+        <li>Experience with modern frameworks and cloud technologies</li>
+        <li>Excellent team collaboration and communication skills</li>
+        <li>Committed to writing clean, maintainable, and efficient code</li>
+        <li>Enthusiastic about learning and implementing new technologies</li>
+      </ul>
+    </div>
+  </div>
+</section>
               
     <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
       <div style="clear:both;"></div>
-
       <div class="all_skills">
-
         <div class="skill">
-          <img src="Images/projectManagement.jpg" width="45px" height = "50px"/>
+          <img src="Images/projectManagement.jpg" alt="Project Management" width="45" height="50"/>
           <h6>Project Management</h6>
-          <p>6 months experience</p>
-      </div>  
-
-        <div class="skill"> 
-            <img src="Images/react.png" width="45px" height = "50px" />
-            <h6>React</h6>
-            <p>6 months experience</p>
-          </div>  
-
-          <div class="skill"> 
-            <img src="Images/python.jpg" width="45px" height = "50px" />
-            <h6>Python</h6>
-            <p>1 year experience</p>
-          </div> 
+          <p>1 year</p>
+        </div>  
 
         <div class="skill">
-          <img src="html_finalprojimages/html5.png" width="45px" height = "50px"/>
+          <img src="Images/react.png" alt="React" width="45" height="50"/>
+          <h6>React</h6>
+          <p>1 year</p>
+        </div>  
+
+        <div class="skill">
+          <img src="Images/python.jpg" alt="Python" width="45" height="50"/>
+          <h6>Python</h6>
+          <p>2 years</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" alt="HTML5" width="45" height="50"/>
           <h6>HTML</h6>
-          <p>2 years experience</p>
+          <p>2 years</p>
         </div>  
 
         <div class="skill">
-          <img src="html_finalprojimages/js.jpeg" width="45px" height = "50px"/>
+          <img src="html_finalprojimages/js.jpeg" alt="JavaScript" width="45" height="50"/>
           <h6>JavaScript</h6>
-          <p>2 years experience</p>
+          <p>2 years</p>
         </div>  
 
         <div class="skill">
-            <img src="Images/csharp.png" width="45px" height = "50px"/>
-            <h6>C#</h6>
-            <p>2 years experience</p>
-          </div>  
+          <img src="Images/csharp.png" alt="C#" width="45" height="50"/>
+          <h6>C#</h6>
+          <p>3 years</p>
+        </div>  
 
-          <div class="skill">
-            <img src="Images/java.png" width="45px" height = "50px"/>
-            <h6>Java</h6>
-            <p>2 years experience</p>
-          </div>  
-
-
+        <div class="skill">
+          <img src="Images/java.png" alt="Java" width="45" height="50"/>
+          <h6>Java</h6>
+          <p>3 years</p>
+        </div>  
       </div>
     </section>
           
     <!-- Projects -->
     <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
+      <h2>Projects</h2>
       <div style="clear:both;"></div>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Personal Project: Spring Social Media Blog API</h3>
+          <ul>
+            <li>
+              Developed a backend for a hypothetical social media application using the Java Spring Boot framework.
+              Key responsibilities included designing and implementing RESTful APIs to manage user accounts and messages,
+              ensuring robust CRUD functionality, and leveraging Spring Data JPA for database persistence.  
+              <a href="https://github.com/davidqm7/Spring-Social-Media-API-" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
 
-        <div id="projects-container" class="projects-container">
+        <hr>
+        
+        <div class="project-card">
+          <h3>Semester Project: Accounting Application</h3>
+          <ul>
+            <li>
+              Led the development of a comprehensive web-based accounting/finance application using Firebase for the backend and 
+              React for the front-end. Collaborated with a team of three to implement key features including user authentication, role-based 
+              access control (administrator, manager, accountant), secure password management, and financial transaction tracking. 
+              <a href="https://github.com/davidqm7/accounting_application" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="project-card">
-            <h3>Personal Project: Spring Social Media Blog API</h3>
-            <ul>
-              <li> Developed a backend for a hypothetical social media application using the Java Spring Boot framework.
-                 Key responsibilities included designing and implementing RESTful APIs to manage user accounts and messages,
-                  ensuring robust CRUD functionality, and leveraging Spring Data JPA for database persistence.  
-              <a href="https://github.com/davidqm7/Spring-Social-Media-API-">Github</a>.</li>
-            </ul>
-          </div>
+        <hr>
 
-          <hr>
+        <div class="project-card">
+          <h3>Personal Project: Stock Investment Dashboard</h3>
+          <ul>
+            <li>
+              Developed an interactive data visualization dashboard analyze financial performance 
+              of stocks, focusing on Tesla and Amazon. Extracted and processed historical stock prices and quarterly revenue data 
+              using Python, yfinance, and web scraping. Created visualizations in Plotly and Dash to display key financial metrics.
+              <a href="https://github.com/davidqm7/Stock-Dashboard" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Personal Project: Basic Chat Application</h3>
+          <ul>
+            <li>
+              Basic real time chat application made using React and firebase for the backend. Implemented message storage, retrieval, and real-time updates using Firestore database.
+              Added Firebase Authentication for user sign-in and security management.
+              <a href="https://github.com/davidqm7/Chat-Application" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
+
+        <hr>
           
-          <div class="project-card">
-            <h3>Semester Project: Accounting Application</h3>
-            <ul>
-              <li>Led the development of a comprehensive web-based accounting/finance application using Firebase for the backend and 
-                React for the front-end. Collaborated with a team of three to implement key features including user authentication, role-based 
-                access control (administrator, manager, accountant), secure password management, and financial transaction tracking. 
-                Integrated Firebase Authentication for secure user login and Firebase Firestore for data storage. Key contributions included
-                 designing the user registration and login system, implementing password reset functionality, and ensuring secure data handling. 
-              <a href="https://github.com/davidqm7/accounting_application">Github</a>.</li>
-            </ul>
-          </div>
+        <div class="project-card">
+          <h3>Semester Project: Web Calculator Application</h3>
+          <ul>
+            <li>
+              Calculator web application with testing. Done using C# ASP.NET Blazor Server with NUNIT and Playwright for testing.
+              The calculator provides basic arithmetic operations accessible through a user-friendly web interface. 
+              <a href="https://github.com/davidqm7/TestingQAProject" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
 
-          <hr>
+        <hr>
 
-          <div class="project-card">
-            <h3>Personal Project: Stock Investment Dashboard</h3>
-            <ul>
-              <li> Developed an interactive data visualization dashboard analyze financial performance 
-                of stocks, focusing on Tesla and Amazon. Extracted and processed historical stock prices and quarterly revenue data 
-                using Python, yfinance, and web scraping. Created visualizations in Plotly and Dash to display key financial metrics.
-                  <a href="https://github.com/davidqm7/Stock-Dashboard">Github</a>.</li>
-            </ul>
-          </div>
+        <div class="project-card">
+          <h3>Personal Project: Fibonacci Visualizer</h3>
+          <ul>
+            <li>
+              Developed an interactive web application using React to visualize the Fibonacci sequence. 
+              Integrated real-time user input and dynamic animations for enhanced user engagement.
+              <a href="https://github.com/davidqm7/Fibonacci-Visualizer" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="project-card">
-            <h3>Personal Project: Basic Chat Application</h3>
-            <ul>
-              <li> Basic real time chat application made using React and firebase for the backend. Implemented message storage, retrieval, and real-time updates using Firestore database.
-                Added Firebase Authentication for user sign-in and security management. <a href="https://github.com/davidqm7/Chat-Application">Github</a>.</li>
-            </ul>
-          </div>
+        <hr>
 
-          <hr>
-            
-          <div class="project-card">
-            <h3>Semester Project: Web Calculator Application</h3>
-            <ul>
-              <li>Calculator web application with testing. Done using C# ASP.NET Blazor Server with NUNIT and Playwright for testing.
-                The calculator provides basic arithmetic operations accessible through a user-friendly web interface. 
-                The server-side logic is implemented using Blazor components, ensuring seamless interaction between the client and the server. Located on my <a href="https://github.com/davidqm7/TestingQAProject">Github</a>.</li>
-            </ul>
-          </div>
-
-          <hr>
-
-          <div class="project-card">
-            <h3>Personal Project: Fibonacci Visualizer</h3>
-            <ul>
-              <li>Developed an interactive web application using React to visualize the Fibonacci sequence. 
-                Integrated real-time user input and dynamic animations for enhanced user engagement, with a responsive design
-                 supporting multiple devices. Located on my <a href="https://github.com/davidqm7/Fibonacci-Visualizer">Github</a>.</li>
-            </ul>
-          </div>
-
-          <hr>
-
-          <div class="project-card">
-            <h3>Semester Project: Fruit Stand Website</h3>
-            <ul>
-              <li>Fruit Stand sales website with a database and queries, using WAMP server. Done using PHP, html, CSS, and MySQL for the database.</li>
-            </ul>
-          </div>
-
-          <hr>
-
-          <div class="project-card">
-            <h3>Personal Project</h3>
-            <ul>
-              <li>Personal project of a Portfolio website. Done using basic Html, Css, and JavaScript.</li>
-            </ul>
-          </div>
-
-    </div>
+        <div class="project-card">
+          <h3>Semester Project: Fruit Stand Website</h3>
+          <ul>
+            <li>Fruit Stand sales website with a database and queries, using WAMP server. Done using PHP, HTML, CSS, and MySQL for the database.</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <div style="clear:both;"></div>
 
     <!-- Recommendations -->
     <section id="recommendations">
-      <h2>Recommendations (Not actual recommendations)</h2>
+      <h2>Recommendations</h2>
       <div style="clear:both;"></div>
       <div class="all_recommendations" id="all_recommendations">
         <div class="recommendation">
           <span>&#8220;</span>
-          David innovative solutions and attention to detail made a significant impact on 
+          David's innovative solutions and attention to detail made a significant impact on 
           our project. His ability to adapt and troubleshoot quickly was invaluable. 
-          Highly recommended!”
+          Highly recommended!
           <span>&#8221;</span>
         </div>
         <div class="recommendation">
@@ -239,7 +242,7 @@
       <div class="flex_center">
         <fieldset>
           <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
+          <input type="text" placeholder="Name (Optional)"/>
           <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
           <div class="flex_center">
             <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
@@ -248,18 +251,25 @@
       </div>
     </section>
 
+    <!-- Scroll to Top Button -->
     <div class="iconbutton">
       <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
       </a>
     </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
+    <!-- Popup -->
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="Success"/>
       <h3>Thank you for leaving a recommendation!</h3>
       <button onclick="showPopup(false)">Ok</button>
     </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 David Quintanilla. All rights reserved.</p>
+    </footer>
   </body>
 </html>
